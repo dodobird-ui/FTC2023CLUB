@@ -22,7 +22,8 @@ public class SimpleMotor extends LinearOpMode {
         while(opModeIsActive()){
             //Sets the power of out motor to the negative of the y-value of the stick.
             veryCoolMotor.setPower(-gamepad1.left_stick_y);
-            //Alternatively, the next two lines show how you could use a variable and a method to call the setPower() method. This can be useful when you are performing multiple operations at once.
+            //Alternatively, the next two lines show how you could use a variable and a method to call the setPower() method.
+            // This can be useful when you are performing multiple operations at once.
             power = -gamepad1.left_stick_y;
             basicMovement(power);
         }
@@ -32,3 +33,5 @@ public class SimpleMotor extends LinearOpMode {
         veryCoolMotor.setPower(power);
     }
 }
+
+
